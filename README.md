@@ -75,12 +75,12 @@ The suggested order for going through each of the directories is:
 
 *  [x] `hello` -- Hello world
 *  [x] `bignum` -- Print some big numbers
-*  [] `datatypes` -- Experiment with type conversion
-*  [] `modules` -- Learn to import from modules
-*  [] `printing` -- Formatted print output
-*  [] `lists` -- Python's version of arrays
-*  [] `tuples` -- Immutable lists typically for heterogenous data
-*  [] `slices` -- Accessing parts of lists
+*  [x] `datatypes` -- Experiment with type conversion
+*  [x] `modules` -- Learn to import from modules
+*  [x] `printing` -- Formatted print output
+*  [x] `lists` -- Python's version of arrays
+*  [x] `tuples` -- Immutable lists typically for heterogenous data
+*  [x] `slices` -- Accessing parts of lists
 *  [] `comprehensions` -- List comprehensions
 *  [] `dictionaries` -- Dictionaries
 *  [] `functions` -- Functions
