@@ -22,3 +22,12 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+
+def calendarMonth():
+    x = input("Enter calendar.py month [year] :")
+    if len(x) == 0:
+        print(calendar)
+
+
+print(calendarMonth())
