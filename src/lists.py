@@ -8,15 +8,18 @@ y = [8, 9, 10]
 
 # Change x so that it is [1, 2, 3, 4]
 # YOUR CODE HERE
-print(x.append(4))
+x.append(4)
+print(x)
 
 # Using y, change x so that it is [1, 2, 3, 4, 8, 9, 10]
 # YOUR CODE HERE
-print(x.extend(y))
+x.extend(y)
+print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 10]
 # YOUR CODE HERE
-print(x.remove(8))
+x.remove(8)
+print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
 # YOUR CODE HERE
@@ -34,3 +37,10 @@ print(len(x))
 print("----------- multiplied by 1000 ------------------- ")
 for i in x:
     print(i * 1000)
+
+# index = 0
+# for i in x:
+#     x[index] = i * 1000
+#     index += 1
+
+#     print("multiply * 1000", x)

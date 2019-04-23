@@ -36,6 +36,8 @@ a = [7, 6, 5, 4]
 # What thing do you have to add to make this work?
 
 # Answer
+
+
 # def f2(*num):
 #     x = 0
 #     for n in num:
@@ -43,7 +45,7 @@ a = [7, 6, 5, 4]
 #     return x
 
 
-print(f2(a))    # Should print 22
+# print(f2(a))    # Should print 22
 
 # Write a function f3 that accepts either one or two arguments. If one argument,
 # it returns that value plus 1. If two arguments, it returns the sum of the
@@ -51,6 +53,18 @@ print(f2(a))    # Should print 22
 
 # YOUR CODE HERE
 
+
+def f3(one=1, *num):
+    if one > 1:
+        return one + 1
+    else:
+        x = 0
+        for n in num:
+            x = x + n + one
+        return x
+
+
+print("------------ f3 answers ----------")
 print(f3(1, 2))  # Should print 3
 print(f3(8))     # Should print 9
 
@@ -65,6 +79,11 @@ print(f3(8))     # Should print 9
 
 # YOUR CODE HERE
 
+def f4(**kwargs):
+    for i in kwargs:
+        print(f"key: {i}, value: {kwargs[i]}")
+
+
 # Should print
 # key: a, value: 12
 # key: b, value: 30
@@ -76,10 +95,18 @@ f4(a=12, b=30)
 # key: founded, value: "March 23, 1868"
 f4(city="Berkeley", population=121240, founded="March 23, 1868")
 
+
+def f42(*kwargs):
+    for i in kwargs:
+        x = kwargs[0]
+        for two in x:
+            print(f"key: {two}, value: {x[two]}")
+
+
 d = {
     "monster": "goblin",
     "hp": 3
 }
 
 # What thing do you have to add to make this work?
-f4(d)
+f42(d)
