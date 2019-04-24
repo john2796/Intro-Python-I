@@ -42,7 +42,6 @@ class Geocache(Waypoint):
 # YOUR CODE HERE
 waypoint = Waypoint("Catacombs", 41.70505, -121.51521)
 
-
 # Without changing the following line, how can you make it print into something
 # more human-readable? Hint: Look up the `object.__str__` method
 print(waypoint)
